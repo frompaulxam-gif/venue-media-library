@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="The camera and iPhone media folders for Moonshine and Merchants Yard in Leicester.">
+  <title>Media library · Moonshine &amp; Merchants Yard</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="share.js" defer></script>
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M7.5 6H18v10.5"/></symbol>
+    <symbol id="share" viewBox="0 0 24 24"><path d="M12 14V3m-4 4 4-4 4 4M6 10H4.5v10h15V10H18"/></symbol>
+    <symbol id="photo" viewBox="0 0 24 24"><path d="M3 7.5h4l1.5-3h7l1.5 3h4v12H3z"/><circle cx="12" cy="13" r="3.4"/></symbol>
+    <symbol id="film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7.5 4v16m9-16v16M3.5 9h4m-4 6h4m9-6h4m-4 6h4"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10 5h4m-3.1 13.6h2.2"/></symbol>
+    <symbol id="drive" viewBox="0 0 24 24"><path d="m8.1 2.8 7.8.1 7.4 12.8-3.9 6.6H4.5L.7 15.7zM8.1 2.8l7.4 12.9h7.8m-7.8 0H8.2l-3.7 6.6m3.7-6.6 3.7-6.5"/></symbol>
+  </svg>
+  <header class="mast">
+    <div class="wrap bar">
+      <div class="brand"><img src="assets/mark.svg" alt="" width="33" height="33"><span>Venue desk</span></div>
+      <button id="share-library" class="share" type="button" hidden><svg class="icon"><use href="#share"/></svg><span>Share library</span></button>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="intro">
+      <div><h1>Media <em>library</em></h1><p>Choose a venue folder or open the shared live socials.</p></div>
+      <span class="drive-service"><svg class="icon"><use href="#drive"/></svg>Google Drive</span>
+    </div>
+    <div class="venues">
+      <section class="venue moon" aria-labelledby="moonshine">
+        <h2 class="cover"><img class="scene" src="assets/moonshine-stage.webp" alt="" fetchpriority="high"><span class="shade"></span><img id="moonshine" class="venue-logo moon-logo" src="assets/moonshine.png" alt="Moonshine Speakeasy"></h2>
+        <div class="folder-grid">
+          <a class="folder" href="https://drive.google.com/drive/folders/1kPbGlwpWEBo5nmDd7D-xKBwnJe_O0P7B" target="_blank" rel="noopener noreferrer" aria-label="Moonshine camera videos, open in Google Drive"><span class="tile"><svg class="icon"><use href="#film"/></svg></span><span class="folder-type"><strong>Videos</strong><small>Camera</small></span><svg class="icon jump"><use href="#arrow"/></svg></a>
+          <a class="folder" href="https://drive.google.com/drive/folders/1trybrzAT90Bw4Jax5wCFZ2m4YVzgpZL_" target="_blank" rel="noopener noreferrer" aria-label="Moonshine camera photos, open in Google Drive"><span class="tile"><svg class="icon"><use href="#photo"/></svg></span><span class="folder-type"><strong>Photos</strong><small>Camera</small></span><svg class="icon jump"><use href="#arrow"/></svg></a>
+        </div>
+      </section>
+      <section class="venue yard" aria-labelledby="merchants">
+        <h2 class="cover"><img class="scene" src="assets/merchants-tipi.webp" alt="" fetchpriority="high"><span class="shade"></span><img id="merchants" class="venue-logo yard-logo" src="assets/merchants-yard.svg" alt="Merchants Yard Leicester"></h2>
+        <div class="folder-grid">
+          <a class="folder" href="https://drive.google.com/drive/folders/1cZVSM5QL7Q1nCJx-bDYnDPe8ab3hwSKH" target="_blank" rel="noopener noreferrer" aria-label="Merchants Yard camera photos, open in Google Drive"><span class="tile"><svg class="icon"><use href="#photo"/></svg></span><span class="folder-type"><strong>Photos</strong><small>Camera</small></span><svg class="icon jump"><use href="#arrow"/></svg></a>
+        </div>
+      </section>
+    </div>
+    <section class="shared" aria-labelledby="shared-title">
+      <h2 id="shared-title">Shared folder</h2>
+      <a class="shared-link" href="https://drive.google.com/drive/folders/1409jKXiPjlXcKNjyJMLiNTlF9StzQHhT" target="_blank" rel="noopener noreferrer" aria-label="Live socials, shared iPhone folder for Moonshine and Merchants Yard, open in Google Drive">
+        <span class="phone-tile"><svg class="icon"><use href="#phone"/></svg></span>
+        <span class="shared-text"><strong>Live socials</strong><small>iPhone <span aria-hidden="true">·</span> Moonshine &amp; Merchants Yard</small></span>
+        <span class="shared-arrow"><svg class="icon jump"><use href="#arrow"/></svg></span>
+      </a>
+    </section>
+  </main>
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <dialog id="link-dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><h2 id="dialog-title">Share library</h2><label for="share-url">Copy this link to share with your team.</label><input id="share-url" type="url" readonly><button class="done">Done</button></form>
+  </dialog>
+</body>
+</html>
